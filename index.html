@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Memory Gym</title>
+<meta name="description" content="Free memory training: numbers, words, cards, names, memory palaces, Major System and spaced repetition.">
+<meta name="theme-color" content="#8c1c3a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Memory Gym">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a href="#home" class="brand" aria-label="Memory Gym home">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><use href="#temple"/></svg>
+    <span>Memory Gym</span>
+  </a>
+  <span id="streakPill" class="pill" title="Daily streak"></span>
+</header>
+<main id="app" tabindex="-1"></main>
+<div id="toast" role="status" aria-live="polite"></div>
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="temple" viewBox="0 0 64 64">
+    <path d="M32 6 L58 20 H6 Z" fill="currentColor"/>
+    <rect x="9" y="23" width="46" height="4" fill="currentColor"/>
+    <rect x="12" y="30" width="6" height="20" fill="currentColor"/>
+    <rect x="23" y="30" width="6" height="20" fill="currentColor"/>
+    <rect x="35" y="30" width="6" height="20" fill="currentColor"/>
+    <rect x="46" y="30" width="6" height="20" fill="currentColor"/>
+    <rect x="6" y="52" width="52" height="6" fill="currentColor"/>
+  </symbol>
+</svg>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
